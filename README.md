@@ -141,11 +141,36 @@ After these run the server and create 10 users
 
 ## PROGRAM
 
-Include your code here
+```
+admin.py
 
+from django.contrib import admin
+from.models import student,studentAdmin
+admin.site.register(student,studentAdmin)
+
+models.py
+
+from django.db import models
+from django.contrib import admin
+class student(models.Model):
+    sid=models.CharField(max_length=200)
+    name=models.CharField(max_length=100)
+    salary=models.IntegerField()
+    age=models.IntegerField()
+    email=models.EmailField()
+
+class studentAdmin(admin.ModelAdmin):
+    list_display=('sid','name','salary','age','email')
+
+```
 ## OUTPUT
+![OUTPUT](./Studentslist.jpg)
 
-Include the screenshot of your admin page.
+### Primary Key Error
+![Primary Key Error](./StudentslistError.jpg)
 
+### ER DIAGRAM
+![ER DIAGRAM](./ERDiagram.jpg)
 
 ## RESULT
+
