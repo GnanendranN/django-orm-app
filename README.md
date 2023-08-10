@@ -41,16 +41,15 @@ Then change the following in settings in the settings.py.
    In settings.py add import os in the line where we need to import libraries.
 
  ## STEP 8.2 
-   Then add your url in ALLOWED_HOSTS =[
-
-     ‘<your url>’
+   Then add your url in ALLOWED_HOSTS = 
+   [     ‘<your url>’
     ]
 
  ## STEP 8.3 
    Then add ‘myapp’ in the configuration INSTALLED_APPS. 
 
  ## STEP 8.4 
-   Then add STATICFILES_DIRS=[
+   Then add STATICFILES_DIRS= [
        os.path.join(BASE_DIR,'static')
     ] 
 
@@ -173,4 +172,4 @@ class studentAdmin(admin.ModelAdmin):
 ![ER DIAGRAM](./ERDiagram.jpg)
 
 ## RESULT
-
+The program for creating an student database using ORM is executed sucessfully.
