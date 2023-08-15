@@ -168,8 +168,8 @@ class studentAdmin(admin.ModelAdmin):
 ### Primary Key Error
 ![Primary Key Error](./StudentslistError.jpg)
 
-### ER DIAGRAM
-![ER DIAGRAM](./ERDiagram.jpg)
+### ERDIAGRAM
+![ERDIAGRAM](./erd.jpg)
 
 ## RESULT
 The program for creating an student database using ORM is executed sucessfully.
